@@ -7,10 +7,6 @@
         .auto-style3 {
             font-size: xx-large;
         }
-        .auto-style4 {
-            width: 656px;
-            font-size: xx-large;
-        }
         .auto-style5 {
             font-size: large;
         }
@@ -23,72 +19,98 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width:100%;">
     <tr>
-        <td class="auto-style2">1.</td>
+        <td class="auto-style2">1. A Classes methods and properties can throw exceptions to indicate valid data.</td>
         <td>
             <asp:DropDownList ID="DropDownList11" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">2.</td>
+        <td class="auto-style2">2.if a class member is not declared with an access modifier, it is private by default.</td>
         <td>
             <asp:DropDownList ID="DropDownList12" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">3.</td>
+        <td class="auto-style2">3. To overload a constructor, you need to provide multiple constructor declarations with different signitures</td>
         <td>
             <asp:DropDownList ID="DropDownList13" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">4.</td>
+        <td class="auto-style2">4. What variable represents classwide information</td>
         <td>
             <asp:DropDownList ID="DropDownList14" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">Private</asp:ListItem>
+                <asp:ListItem Value="1">Public</asp:ListItem>
+                <asp:ListItem Value="2">Open</asp:ListItem>
+                <asp:ListItem Value="3">Static</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">5.</td>
+        <td class="auto-style2">5. Any attempt to modify a readonly instance variable after its object is constructed is correct</td>
         <td>
             <asp:DropDownList ID="DropDownList15" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">6.</td>
+        <td class="auto-style2">6. Its possible that no objects or onlt a subset of the eligable objects will be collected.</td>
         <td>
             <asp:DropDownList ID="DropDownList16" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">7.</td>
+        <td class="auto-style2">7. Members that are declared as const must vbe assigned to values at runtime</td>
         <td>
             <asp:DropDownList ID="DropDownList17" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">8.</td>
+        <td class="auto-style2">8. What captures data representations and the operations that can be performed on that data?</td>
         <td>
             <asp:DropDownList ID="DropDownList18" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">GET</asp:ListItem>
+                <asp:ListItem Value="1">SET</asp:ListItem>
+                <asp:ListItem Value="3">ADT</asp:ListItem>
+                <asp:ListItem Value="3">GSE</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">9.</td>
+        <td class="auto-style2">9. What lists all classes of the FrameWork Class Library</td>
         <td>
             <asp:DropDownList ID="DropDownList19" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">Display</asp:ListItem>
+                <asp:ListItem Value="2">Finder</asp:ListItem>
+                <asp:ListItem Value="2">View</asp:ListItem>
+                <asp:ListItem Value="3">Object Browser</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td class="auto-style2">10.</td>
+        <td class="auto-style2">10. Int, Double, and char are examples of abstract data types</td>
         <td>
             <asp:DropDownList ID="DropDownList20" runat="server" Height="19px" Width="263px">
+                <asp:ListItem Value="0">True</asp:ListItem>
+                <asp:ListItem Value="1">False</asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>
