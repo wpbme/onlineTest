@@ -153,7 +153,7 @@
                 <asp:TextBox ID="txtNumber" runat="server" Height="16px" Width="200px"></asp:TextBox>
             </td>
             <td>
-                <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" Width="210px" />
             </td>
         </tr>
     </table>
