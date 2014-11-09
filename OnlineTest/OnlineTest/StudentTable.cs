@@ -13,12 +13,18 @@ namespace OnlineTest
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int StudentID { get; set; }
 
-        [StringLength(10)]
-        public string FirstName { get; set; }
+        public float Grade { get; set; }
 
-        [StringLength(10)]
-        public string LastName { get; set; }
+        public int TestID { get; set; }
 
-        public float? Grade { get; set; }
+        public int CourseNumber { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string CourseName { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string UserName { get; set; }
     }
 }

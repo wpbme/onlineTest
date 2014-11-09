@@ -14,6 +14,13 @@
         .auto-style5 {
             font-size: large;
         }
+        .auto-style6 {
+            width: 759px;
+            height: 28px;
+        }
+        .auto-style7 {
+            height: 28px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -37,8 +44,8 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">2. What method returns the number of elements in the Query result?</td>
-            <td>
+            <td class="auto-style6">2. What method returns the number of elements in the Query result?</td>
+            <td class="auto-style7">
                 <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="293px">
                     <asp:ListItem></asp:ListItem>
                     <asp:ListItem Value="0">Number</asp:ListItem>

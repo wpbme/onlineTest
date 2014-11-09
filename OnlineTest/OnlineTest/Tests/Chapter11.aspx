@@ -128,17 +128,17 @@
     </tr>
     <tr>
         <td class="auto-style3"><span class="auto-style5">Course Name:</span><br />
-            <asp:TextBox ID="txtCourseName" runat="server" Height="16px" Width="201px"></asp:TextBox>
+            <asp:TextBox ID="txtName" runat="server" Height="16px" Width="201px"></asp:TextBox>
         </td>
         <td class="auto-style2"></td>
     </tr>
     <tr>
         <td class="auto-style4"><span class="auto-style5">Course Number: </span>
             <br />
-            <asp:TextBox ID="txtCourseNumber" runat="server" Height="16px" Width="201px"></asp:TextBox>
+            <asp:TextBox ID="txtNumber" runat="server" Height="16px" Width="201px"></asp:TextBox>
         </td>
         <td>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="200px" />
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="200px" OnClick="btnSubmit_Click" />
         </td>
     </tr>
 </table>

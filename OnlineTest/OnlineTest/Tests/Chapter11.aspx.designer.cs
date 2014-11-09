@@ -103,22 +103,22 @@ namespace OnlineTest.Tests {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList13;
         
         /// <summary>
-        /// txtCourseName control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCourseName;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
-        /// txtCourseNumber control.
+        /// txtNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCourseNumber;
+        protected global::System.Web.UI.WebControls.TextBox txtNumber;
         
         /// <summary>
         /// btnSubmit control.

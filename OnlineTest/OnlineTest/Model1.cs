@@ -8,7 +8,7 @@ namespace OnlineTest
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model1")
+            : base("name=Model11")
         {
         }
 
@@ -18,11 +18,11 @@ namespace OnlineTest
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentTable>()
-                .Property(e => e.FirstName)
+                .Property(e => e.CourseName)
                 .IsFixedLength();
 
             modelBuilder.Entity<StudentTable>()
-                .Property(e => e.LastName)
+                .Property(e => e.UserName)
                 .IsFixedLength();
         }
     }
