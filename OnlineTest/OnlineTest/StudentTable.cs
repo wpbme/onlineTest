@@ -10,7 +10,6 @@ namespace OnlineTest
     public partial class StudentTable
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int StudentID { get; set; }
 
         public float Grade { get; set; }
