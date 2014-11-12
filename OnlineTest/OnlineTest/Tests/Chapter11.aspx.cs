@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace OnlineTest.Tests
@@ -25,13 +26,19 @@ namespace OnlineTest.Tests
             int grade = 0;
 
             int index = 0;
-            foreach(Control c in this.Controls)
+            foreach (HtmlTableRow r in TableWithControls.Rows)
             {
-                if (c is DropDownList)
+                foreach (HtmlTableCell tc in r.Cells)
                 {
-                    if (((DropDownList)c).SelectedValue == correctAnswers[index])
-                        grade++;
-                    index++;
+                    foreach (Control c in tc.Controls)
+                    {
+                        if (c is DropDownList)
+                        {
+                            if (((DropDownList)c).SelectedValue == correctAnswers[index])
+                                grade++;
+                            index++;
+                        }
+                    }
                 }
             }
             myStudent.Grade = grade;
@@ -42,8 +49,8 @@ namespace OnlineTest.Tests
 
             dbcontext.StudentTables.Add(myStudent);
             dbcontext.SaveChanges();
-            
-            
+
+            Response.Redirect("/Default.aspx");
         
         }
     }

@@ -13,6 +13,15 @@ namespace OnlineTest.Tests {
     public partial class Chapter9Test {
         
         /// <summary>
+        /// TableWithControls control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTable TableWithControls;
+        
+        /// <summary>
         /// DropDownList1 control.
         /// </summary>
         /// <remarks>

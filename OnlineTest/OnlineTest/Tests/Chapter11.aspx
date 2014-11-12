@@ -25,7 +25,7 @@
     Chapter 11 Test</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <table style="width: 100%;">
+    <table style="width: 100%;" id="TableWithControls" runat="server">
     <tr>
         <td class="auto-style3">1. Base class constructors are inherited by derived classes</td>
         <td class="auto-style2">

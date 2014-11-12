@@ -47,7 +47,7 @@
             <div class="float-left">
                 <p class="site-title">
                     <a runat="server" href="~/">
-                    <img alt="" class="auto-style1" src="Images/Computer.jpg" /></a>
+                    <img alt="" class="auto-style1" src="/Images/Computer.jpg" /></a>
                 </p>
             </div>
             <div class="float-right">

@@ -17,9 +17,10 @@
     <asp:HyperLink ID="HyperLink1" runat="server" NavigateURL="~/Tests/Chapter9Test.aspx">Start Test</asp:HyperLink>
     </p>
 <p>Chapter 10 - 
-    <asp:HyperLink ID="HyperLink2" runat="server" NavigateURL="~/Tests/Chapter9Test">Start Test</asp:HyperLink>
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateURL="~/Tests/Chapter10Test.aspx">Start Test</asp:HyperLink>
     </p>
-<p>Chapter 11 - <asp:HyperLink ID="HyperLink3" runat="server" href="~/Tests/Chapter9Test">Start Test</asp:HyperLink>
+<p>Chapter 11 - 
+    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Tests/Chapter11.aspx">Start Test</asp:HyperLink>
     </p>
 <p>&nbsp;</p>
 </asp:Content>

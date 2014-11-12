@@ -10,6 +10,13 @@
         .auto-style5 {
             font-size: large;
         }
+        .auto-style6 {
+            width: 656px;
+            height: 28px;
+        }
+        .auto-style7 {
+            height: 28px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
@@ -17,10 +24,10 @@
     Chapter 10 Test</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <table style="width:100%;">
+    <table style="width:100%;" id="TableWithControls" runat="server">
     <tr>
-        <td class="auto-style2">1. A Classes methods and properties can throw exceptions to indicate valid data.</td>
-        <td>
+        <td class="auto-style6">1. A Classes methods and properties can throw exceptions to indicate valid data.</td>
+        <td class="auto-style7">
             <asp:DropDownList ID="DropDownList11" runat="server" Height="19px" Width="263px">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem Value="0">True</asp:ListItem>
