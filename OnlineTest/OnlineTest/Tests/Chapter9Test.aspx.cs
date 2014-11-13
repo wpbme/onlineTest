@@ -14,7 +14,13 @@ namespace OnlineTest.Tests
         Model1 dbcontext = new Model1();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            dbcontext.StudentTables.Load();
+            var query = from a in dbcontext.StudentTables.Local
+                        where a.UserName == User.Identity.Name && a.TestID == 9
+                        select a;
+            int b = query.Count();
+            if (query.Count() > 0)
+                Response.Redirect("/Default.aspx");
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -26,6 +32,8 @@ namespace OnlineTest.Tests
             string[] correctAnswers = new string[10] { "2", "2", "0", "1", "3", "2", "0", "0", "3", "0" };
             int grade = 0;
             int index = 0;
+            //contains the questions and details on correctness.
+            Dictionary<string, string> Answers = new Dictionary<string, string>();
 
             foreach(HtmlTableRow r in TableWithControls.Rows)
             {
@@ -35,8 +43,13 @@ namespace OnlineTest.Tests
                     {
                         if(c is DropDownList)
                         {
+                            string Correct = "Incorrect";
                             if (((DropDownList)c).SelectedValue == correctAnswers[index])
+                            {
                                 grade++;
+                                Correct = "Correct";
+                            }
+                            Answers.Add("Question " + (index + 1), Correct);
                             index++;
                         }
                     }
@@ -51,7 +64,8 @@ namespace OnlineTest.Tests
             dbcontext.StudentTables.Add(myStudent);
             dbcontext.SaveChanges();
 
-            Response.Redirect("/Default.aspx");
+            Session.Add("QuestionsAndAnswers", Answers);
+            Response.Redirect("/Results.aspx");
 
         }
     }
