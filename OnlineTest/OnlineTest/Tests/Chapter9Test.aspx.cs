@@ -14,13 +14,13 @@ namespace OnlineTest.Tests
         Model1 dbcontext = new Model1();
         protected void Page_Load(object sender, EventArgs e)
         {
+
             dbcontext.StudentTables.Load();
             var query = from a in dbcontext.StudentTables.Local
-                        where a.UserName == User.Identity.Name && a.TestID == 9
+                        where a.UserName.Contains(User.Identity.Name) && a.TestID == 9
                         select a;
-            int b = query.Count();
             if (query.Count() > 0)
-                Response.Redirect("/Default.aspx");
+                Response.Redirect("/TestAlreadyTaken.aspx");
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)

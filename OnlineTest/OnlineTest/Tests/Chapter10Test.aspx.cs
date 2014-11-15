@@ -16,10 +16,10 @@ namespace OnlineTest.Tests
         {
             dbcontext.StudentTables.Load();
             var query = from a in dbcontext.StudentTables.Local
-                        where a.UserName == User.Identity.Name && a.TestID == 10
+                        where a.UserName.Contains(User.Identity.Name) && a.TestID == 10
                         select a;
             if (query.Count() > 0)
-                Response.Redirect("/Default.aspx");
+                Response.Redirect("/TestAlreadyTaken.aspx");
         }
 
         protected void BtnSubmit_Click(object sender, EventArgs e)
