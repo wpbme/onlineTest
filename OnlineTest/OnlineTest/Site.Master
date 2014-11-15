@@ -71,6 +71,7 @@
                 <nav>
                     <ul id="menu">
                         <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/Teacher/Teacher.aspx">Instructor Access</a></li>
                         <li></li>
                     </ul>
                 </nav>
